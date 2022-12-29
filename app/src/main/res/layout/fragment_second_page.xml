@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_second_to_third"
+    android:padding="@dimen/_20dp"
+    tools:context=".view.fragments.FirstPageFragment">
+
+    <TextView
+        android:id="@+id/tv_skip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textColor="#0AA0D9"
+        android:textSize="@dimen/_27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_second_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/second_page_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_skip1" />
+
+    <TextView
+        android:id="@+id/tv_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:gravity="center"
+        android:text="@string/we_do_your_shopping_while_you_take_a_rest"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_second_fragment" />
+
+    <TextView
+        android:id="@+id/tv_page_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"
+        android:text="@string/we_know_that_shopping_for_vegetables_groceries_and_necessities_can_be_stressful_and_this_is_why_we_are_here_to_solve_your_problems"
+        android:textColor="#8E8E8E"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_page_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

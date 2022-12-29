@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_first_to_second"
+    android:padding="@dimen/_20dp"
+    tools:context=".view.fragments.FirstPageFragment">
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textColor="#0AA0D9"
+        android:textSize="@dimen/_27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_first_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:src="@drawable/first_page_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_skip" />
+
+    <TextView
+        android:id="@+id/tv_page_title"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40dp"
+        android:gravity="center"
+        android:text="@string/welcome_to_grocery_plus"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_first_fragment" />
+
+    <TextView
+        android:id="@+id/tv_page_description"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"
+        android:text="@string/a_place_where_you_can_find_any_grocery_you_want"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_page_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

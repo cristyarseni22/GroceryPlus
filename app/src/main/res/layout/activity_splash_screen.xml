@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_325dp"
+        android:layout_height="@dimen/_325dp"
+        android:src="@drawable/splashscreen_grocery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/spark2"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_28dp"
+        android:layout_marginEnd="@dimen/_88dp"
+        android:src="@drawable/spark1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/spark1"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_28dp"
+        android:layout_marginEnd="@dimen/_216dp"
+        android:src="@drawable/spark1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/spark3"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginEnd="@dimen/_168dp"
+        android:src="@drawable/spark2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/spark4"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_60dp"
+        android:layout_marginEnd="@dimen/_244dp"
+        android:src="@drawable/spark3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/dot1"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_44dp"
+        android:layout_marginEnd="@dimen/_52dp"
+        android:src="@drawable/dot1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/dot2"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_100dp"
+        android:layout_marginEnd="@dimen/_260dp"
+        android:src="@drawable/dot2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/dot3"
+        android:layout_width="@dimen/_37dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginEnd="@dimen/_128dp"
+        android:src="@drawable/dot3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

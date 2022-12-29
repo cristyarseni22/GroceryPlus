@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GroceryPlus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="our_team_members_are_dedicated_to_making_sure_that_your_experience_with_us_is_satisfactory">Our Team Members are dedicated to making sure that your experience with us is satisfactory</string>
+    <string name="we_pay_close_attention_to_your_needs_because_we_care">We pay close attention to your needs because we care</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_to_grocery_plus">Welcome To Grocery Plus</string>
+    <string name="a_place_where_you_can_find_any_grocery_you_want">A place where you can find any grocery you want</string>
+    <string name="we_do_your_shopping_while_you_take_a_rest">We do your shopping, while you take a rest</string>
+    <string name="we_know_that_shopping_for_vegetables_groceries_and_necessities_can_be_stressful_and_this_is_why_we_are_here_to_solve_your_problems">We know that shopping for vegetables, groceries, and necessities can be stressful, and this is why we are here to solve your problems</string>
+</resources>

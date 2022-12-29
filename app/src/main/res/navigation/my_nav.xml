@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/first_fragment">
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.example.groceryplus.view.fragments.FirstPageFragment"
+        android:label="first_page_fragment"
+        tools:layout="@layout/fragment_first_page">
+        <action
+            android:id="@+id/action_first_fragment_to_second_fragment"
+            app:destination="@id/second_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.example.groceryplus.view.fragments.SecondPageFragment"
+        android:label="second_page_fragment"
+        tools:layout="@layout/fragment_second_page">
+        <action
+            android:id="@+id/action_second_fragment_to_third_fragment"
+            app:destination="@id/third_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/third_fragment"
+        android:name="com.example.groceryplus.view.fragments.ThirdPageFragment"
+        android:label="third_page_fragment"
+        tools:layout="@layout/fragment_third_page">
+        <action
+            android:id="@+id/action_third_fragment_to_login_register_Activity"
+            app:destination="@id/login_register_Activity" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_register_Activity"
+        android:name="com.example.groceryplus.view.activity.LoginRegisterActivity"
+        android:label="login_register"
+        tools:layout="@layout/activity_login_register">
+
+    </fragment>
+
+</navigation>
