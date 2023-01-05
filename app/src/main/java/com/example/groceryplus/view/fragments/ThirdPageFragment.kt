@@ -30,6 +30,11 @@ class ThirdPageFragment : Fragment() {
 
         val viewPager = activity?.findViewById<ViewPager2>(R.id.vp_container)
 
+        binding.btnLogin.setOnClickListener {
+            val intent = Intent(context,LoginRegisterActivity::class.java)
+            startActivity(intent)
+        }
+
 
         return binding.root
     }

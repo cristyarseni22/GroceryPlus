@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".view.activity.LoginRegisterActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/login_register_viewPager"
         android:layout_width="match_parent"

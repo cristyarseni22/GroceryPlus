@@ -11,4 +11,11 @@
     <string name="a_place_where_you_can_find_any_grocery_you_want">A place where you can find any grocery you want</string>
     <string name="we_do_your_shopping_while_you_take_a_rest">We do your shopping, while you take a rest</string>
     <string name="we_know_that_shopping_for_vegetables_groceries_and_necessities_can_be_stressful_and_this_is_why_we_are_here_to_solve_your_problems">We know that shopping for vegetables, groceries, and necessities can be stressful, and this is why we are here to solve your problems</string>
+    <string name="enter_email">Enter email</string>
+    <string name="login_here">Login here</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_in_here">Sign in here</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="already_registered">Already registered?</string>
 </resources>

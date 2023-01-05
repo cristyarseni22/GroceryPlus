@@ -1,13 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragments.LoginFragment">
+    android:padding="@dimen/_12dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/guideline2">
 
-    <Button
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:layout_margin="@dimen/_10dp"
+        android:background="@drawable/input_shape"
+        android:drawableEnd="@drawable/ic_outline_email_24"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/enter_email"
+        android:padding="@dimen/_18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/input_shape"
+        android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Login"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="sans-serif-medium"
+        android:padding="@dimen/_10dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/forgot_password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circularProgressBar"
+        android:layout_width="@dimen/_117dp"
+        android:layout_height="@dimen/_119dp"
+        android:elevation="@dimen/_10dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="#00FFFFFF"
+        app:indicatorDirectionCircular="clockwise"
+        app:indicatorSize="@dimen/_100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
+        app:trackColor="#8B00FFB7"
+        app:trackThickness="@dimen/_8dp" />
+
+    <TextView
+        android:id="@+id/tv_no_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_register_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_register_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/sign_in_here"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
